@@ -270,12 +270,13 @@ if __name__ == "__main__":
     img_path = os.listdir(folder)
     images = np.array([os.path.join(folder, i) for i in img_path])
 
-    wire = PitScan(images)
-
-    # Surface plot
-    wire.get_surface_plot()
+    wire = pitwork(images)
 
     # 3D pit reconstruction
     pit_3d = wire.reconstruct_pits_3d()
     print("3D Pit Results (count, depth_max, min_rad, avg_rad, avg_p_depth, pitting_factor):")
     print(pit_3d)
+    
+    # Surface plot
+    wire.get_surface_plot()
+

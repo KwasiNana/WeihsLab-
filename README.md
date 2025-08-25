@@ -68,7 +68,7 @@ The main functionality includes:
    ```python
    folder_one = "path/to/your/images"
 
-3. Run the script
+3. Run the script.
 The program will prompt for voxel size (µm³). Enter based on scan metadata.
 Outputs will be printed in the console and visualized via matplotlib.
 
